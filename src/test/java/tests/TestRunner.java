@@ -6,6 +6,9 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
+//supuestamente aqui falta importar testng
+
+
 @Test
 @CucumberOptions(
         features = "src/test/java/features",//donde estara lo que se debe ejecutar
