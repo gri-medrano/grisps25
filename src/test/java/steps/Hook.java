@@ -1,6 +1,5 @@
 package steps;
 
-import factory.Session;
 import factory.WebDriverManager;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -8,12 +7,6 @@ import io.cucumber.java.Scenario;
 import io.qameta.allure.Allure;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-import io.cucumber.java.es.Dado;
-import io.cucumber.java.es.Cuando;
-import io.cucumber.java.es.Entonces;
-
-
 
 
 import java.io.ByteArrayInputStream;

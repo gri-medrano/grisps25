@@ -1,6 +1,7 @@
 package factory;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import utils.ConfigReader;
 
 public class CreatorChromeDriver {

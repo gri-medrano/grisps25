@@ -1,8 +1,7 @@
 package actions;
-
 import com.google.common.collect.ClassToInstanceMap;
-//import factory.Session;
-import org.checkerframework.checker.nullness.qual.Nullable;
+import com.google.common.collect.MutableClassToInstanceMap;
+import factory.Session;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -23,10 +22,20 @@ public class Click {
 
     public static void hacerClickEnElementos(By locator) {
         try {
-            ClassToInstanceMap<@Nullable Object> Session = null;
-            List<WebElement> elementos = Session.getInstance().getWebDriver().findElements(locator);
+            // Obtener el WebDriver desde la sesión
+            WebDriver driver = Session.getWebDriver();
+
+            // Validar que el WebDriver no sea nulo
+            if (driver == null) {
+                throw new Exception("El WebDriver no está inicializado en la sesión.");
+            }
+
+            // Encontrar los elementos por el localizador
+            List<WebElement> elementos = driver.findElements(locator);
+
             if (elementos != null && !elementos.isEmpty()) {
                 for (WebElement elemento : elementos) {
+                    // Realizar acciones adicionales antes de hacer clic
                     accion.hacerScroll(elemento);
                     elemento.click();
                 }
@@ -37,6 +46,8 @@ public class Click {
             e.printStackTrace();
         }
     }
+
+
 
 
     public static void clickearElemento(By locator, boolean usarJs) throws Exception {
