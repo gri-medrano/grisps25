@@ -32,11 +32,11 @@ public class WebDriverManager {
                     break;
                 case "FIREFOX":
                     CreatorFirefoxDriver driverFirefox = new CreatorFirefoxDriver();
-               //     driver = driverFirefox.createWebDriver();
+                    driver = driverFirefox.createWebDriver();
                     break;
                 case "EDGE":
                     CreatorEdgeDriver driverEdge = new CreatorEdgeDriver();
-                 //   driver = driverEdge.createWebDriver();
+                    driver = driverEdge.createWebDriver();
                     break;
                 default:
                     logger.log(Level.WARNING, "Navegador no válido. Se utilizará Chrome por defecto.");
