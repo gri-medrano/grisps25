@@ -1,0 +1,1 @@
+{"uuid":"e05c02b3-a326-4f6f-a833-21becbfc3c1e","name":"All Test Suite","children":["89a83aa1-7532-4c81-8fe0-8d364254de96"],"befores":[],"afters":[{"name":"EliminarChrome","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1737118780501,"stop":1737118780561}],"start":1737118780270,"stop":1737118780569}
