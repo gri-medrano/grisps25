@@ -1,5 +1,7 @@
 package factory;
 
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import utils.ConfigReader;
 
 public class CreatorEdgeDriver {
